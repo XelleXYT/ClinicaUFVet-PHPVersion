@@ -13,7 +13,7 @@ and open the template in the editor.
     </head>
     <body>
         <div class="banner">Aquí va el banner</div>
-        <div class="contenido">
+        <div id="contenido">
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
@@ -23,7 +23,7 @@ and open the template in the editor.
                              <br>                                                                                      <!--Podemos llamar a una variable php dentro de un tag html-->
                              <input id="cajapassword" class="form-control" name="contraseña" type="password" placeholder="Contraseña">
                              <br>
-                             <button type="submit" class="btn btn-primary" id="boton1">Login</button> 
+                             <button type="submit" class="btn btn-primary" id="boton1" onclick="cargaPagina()">Login</button> 
                         </div>
                         <div class="col-6"></div>
                     </div>
@@ -39,6 +39,10 @@ and open the template in the editor.
     
         <script>
         
+           function cargaPagina(){
+               $('#contenido').load("PaginaMascota.php");
+               
+           }
         
         </script>
     
