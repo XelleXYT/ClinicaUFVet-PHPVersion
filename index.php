@@ -40,7 +40,7 @@ and open the template in the editor.
         <script>
         
            function cargaPagina(){
-               $('#contenido').load("PaginaMascota.php");
+               $('#contenido').load("PaginaPrincipal.php");
                
            }
         

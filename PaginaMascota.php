@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<div id="pgMascota">
+
     <div class="row">
         <div class="col-6">
           <div id="fotoMascota">Aquí va la foto de la mascota</div>
@@ -22,5 +22,26 @@
             <div class="datosMascota">Dueño</div>
         </div>
     </div>
+<div class="row">
+    <div class="col-2"></div>
+    <div id="citas" class="col-8">
+    Lugar donde se insertan las citas.
+    </div>
+    <div class="col-2"></div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <button type="submit" class="btn btn-primary" id="boton1" onclick="">Buscar Mascota</button>
+    </div>
+    <div class="col-6">
+        <button type="submit" class="btn btn-primary" id="boton1" onclick="nuevaMascota()">Nueva Mascota</button>
+    </div>
 </div>
 
+    <script>
+    
+      function nuevaMascota(){
+          $("#pgPrincipal").load("NuevaMascota.php");
+      }
+    
+    </script>
