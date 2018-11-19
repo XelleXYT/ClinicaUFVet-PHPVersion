@@ -82,3 +82,10 @@
    background: no-repeat;
    background-image: url("../imagenes/Cliente/pgClienteTelefonoLetras.png"); 
 }
+
+.banner{
+    background: no-repeat;
+    background-image: url("../imagenes/Login/Banner.png");
+    width:916px;
+    height:160px;
+}

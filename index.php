@@ -12,7 +12,7 @@ and open the template in the editor.
         <link href="css/estilosVet.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="banner">Aquí va el banner</div>
+        <div class="banner"></div>
         <div id="contenido">
             <div class="row">
                 <div class="col-2"></div>
