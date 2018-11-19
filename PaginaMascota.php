@@ -17,17 +17,17 @@
         
          <div class="col-md-6">
             <br>
-            <div class="datosMascota">Etiqueta Nº Chip</div>
+            <div class="datosMascota mChip"></div>
             <br>
-            <div class="datosMascota">Etiqueta Sexo</div>
+            <div class="datosMascota mSexo"></div>
             <br>
-            <div class="datosMascota">Etiqueta Especie</div>
+            <div class="datosMascota mEspecie"></div>
             <br>
-            <div class="datosMascota">Etiqueta Raza</div>
+            <div class="datosMascota mRaza"></div>
             <br>
-            <div class="datosMascota">Etiqueta Fecha Nacimiento</div>
+            <div class="datosMascota fNac"></div>
             <br>
-            <div class="datosMascota">Etiqueta Dueño</div>
+            <div class="datosMascota mProp"></div>
         </div>
         <div class="col-md-6">
             <br>

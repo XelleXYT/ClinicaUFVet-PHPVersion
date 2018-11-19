@@ -12,8 +12,8 @@
 }
 
 .datosMascota{
-    width: 400px;
-    height:100px;
+    width: 200px;
+    height:40px;
     border: 2px solid black;
 }
 
@@ -21,4 +21,64 @@
     width: 800px;
     height: 400px;
     border: 2px solid black;
+}
+
+.nMascota{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaNombreLetras.png");  
+}
+
+.mChip{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaChipLetras.png");  
+}
+
+.mSexo{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaSexoLetras.png");  
+}
+
+.mEspecie{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaEspecieLetras.png");  
+}
+
+.mRaza{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaRazaLetras.png");  
+}
+
+.fNac{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaNacimientoLetras.png");  
+}
+
+.mProp{
+    background: no-repeat;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaPopietarioLetras.png");  
+}
+
+.pApellidos{
+   background: no-repeat;
+   background-image: url("../imagenes/Cliente/pgClienteApellido.png"); 
+}
+
+.pDNI{
+   background: no-repeat;
+   background-image: url("../imagenes/Cliente/pgClienteDNILetras.png"); 
+}
+
+.pDir{
+   background: no-repeat;
+   background-image: url("../imagenes/Cliente/pgClienteDireccionLetras.png"); 
+}
+
+.pCP{
+   background: no-repeat;
+   background-image: url("../imagenes/Cliente/pgClienteCPostalLetras.png"); 
+}
+
+.pTLFN{
+   background: no-repeat;
+   background-image: url("../imagenes/Cliente/pgClienteTelefonoLetras.png"); 
 }

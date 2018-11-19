@@ -3,19 +3,19 @@
 
 <div class="row">
         <div class="col-md-4">
-            <div class="datosMascota">Nombre Mascota</div>
+            <div class="datosMascota nMascota"></div>
             <br>
-            <div class="datosMascota">Chip</div>
+            <div class="datosMascota mChip"></div>
             <br>
-            <div class="datosMascota">Sexo</div>
+            <div class="datosMascota mSexo"></div>
             <br>
-            <div class="datosMascota">Especie</div>
+            <div class="datosMascota mEspecie"></div>
             <br>
-            <div class="datosMascota">Raza</div>
+            <div class="datosMascota mRaza"></div>
             <br>
-            <div class="datosMascota">Fecha Nacimiento</div>
+            <div class="datosMascota fNac"></div>
             <br>
-            <div class="datosMascota">Dueño</div>
+            <div class="datosMascota mProp"></div>
         </div>
         <div class="col-md-6">
             <input id="cajaNombreM" class="form-control" type="text" placeholder="Nombre">

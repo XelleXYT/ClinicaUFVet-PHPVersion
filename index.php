@@ -23,7 +23,7 @@ and open the template in the editor.
                             <br>                                                                                      <!--Podemos llamar a una variable php dentro de un tag html-->
                             <input id="cajapassword" class="form-control" name="contraseña" type="password" placeholder="Contraseña">
                             <br>
-                            <button type="submit" class="btn btn-primary" id="botonLogin" onclick="">Login</button> 
+                            <button type="submit" class="btn btn-primary" id="botonLogin" onclick="cargaPagina()">Login</button> 
                         </div>
                         <div class="col-6"></div>
                     </div>
@@ -44,7 +44,7 @@ and open the template in the editor.
 
                                 }
 
-                                $('#botonLogin').click(function () {
+                              /*  $('#botonLogin').click(function () {
                                     // Read the input content
                                     var _name_input = $('#cajanombre').val();
                                     var _pass_input = $('#cajapassword').val();
@@ -54,7 +54,7 @@ and open the template in the editor.
                                         pass_input: _pass_input
                                     });
                                 });
-
+*/
     </script>
 
     }

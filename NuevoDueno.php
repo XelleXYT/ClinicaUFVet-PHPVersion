@@ -4,17 +4,17 @@
 
 <div class="row">
         <div class="col-md-4">
-            <div class="datosMascota">Nombre</div>
+            <div class="datosMascota nMascota"></div>
             <br>
-            <div class="datosMascota">Apellidos</div>
+            <div class="datosMascota pApellidos"></div>
             <br>
-            <div class="datosMascota">DNI</div>
+            <div class="datosMascota pDNI"></div>
             <br>
-            <div class="datosMascota">Dirección</div>
+            <div class="datosMascota pDir"></div>
             <br>
-            <div class="datosMascota">CP</div>
+            <div class="datosMascota pCP"></div>
             <br>
-            <div class="datosMascota">Teléfono</div>
+            <div class="datosMascota pTLFN"></div>
         </div>
         <div class="col-md-6">
             <input id="cajaNombre" class="form-control" type="text" placeholder="Nombre">
