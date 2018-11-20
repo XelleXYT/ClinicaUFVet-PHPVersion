@@ -12,7 +12,13 @@ and open the template in the editor.
         <link href="css/estilosVet.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="background-color: #2f3145;">
-        <div class="banner"></div>
+        <div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10 banner"></div>
+                <div class="col-1"></div>
+            </div>
+        </div>
         <div>
             <div class="row">
                 <div class="col-2"></div>

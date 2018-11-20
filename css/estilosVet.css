@@ -28,7 +28,7 @@
 }
 
 #citas{
-    width: 800px;
+    width: 600px;
     height: 400px;
     border: 2px solid black;
 }
@@ -101,6 +101,6 @@
 }
 
 #contenido{
-    width:100px;
+    width:200px;
     background-color: #989cc3;
 }

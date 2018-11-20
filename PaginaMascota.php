@@ -4,19 +4,19 @@
 <br>
 <br>
   <div class="row">
-        <div class="col-md-3">
+        <div class="col-3">
             <div id="aSaber">Foto</div>
         </div>
-        <div class="col-md-8">
+        <div class="col-8">
             <div id="nombreMascota">Aquí va el nombre de la mascota</div>
             <br>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-1"></div>
   </div>
-<div class="row" style="height: 100px; width: 800px; background-color: blue;"></div>
+
+<div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 
     <div class="row">
-        <div class="col-1"></div>
          <div class="col-md-4">
             <br>
             <div class="datosMascota mChip"></div>
@@ -45,10 +45,13 @@
             <br>
             <div class="datosInsertados">Dueño</div>
         </div>
-        <div class="col-1"></div>
+        <div class="col-2"></div>
     </div>
 <br>
 <br>
+
+<div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
+
 <div id="citas" class="row">
     
     Lugar donde se insertan las citas.
