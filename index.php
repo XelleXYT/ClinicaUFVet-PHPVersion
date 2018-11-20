@@ -11,12 +11,12 @@ and open the template in the editor.
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/estilosVet.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body style="background-color: #2f3145;">
         <div class="banner"></div>
-        <div id="contenido">
+        <div>
             <div class="row">
                 <div class="col-2"></div>
-                <div class="col-8">
+                <div id="contenido" class="col-8">
                     <div class="row">
                         <div class="col-6">
                             <input id="cajanombre" class="form-control" name="usuario_nombre" type="text" placeholder="Usuario">

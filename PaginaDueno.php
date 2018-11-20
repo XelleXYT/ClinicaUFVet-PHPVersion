@@ -3,8 +3,8 @@
 
 
 <div class="row">
-        
-         <div class="col-md-6">
+         <div class="col-1"></div>
+         <div class="col-md-4">
             <br>
             <div class="datosMascota nMascota"></div>
             <br>
@@ -20,19 +20,19 @@
         </div>
         <div class="col-md-6">
             <br>
-            <div class="datosMascota">Nombre</div>
+            <div class="datosInsertados">Nombre</div>
             <br>
-            <div class="datosMascota">Apellidos</div>
+            <div class="datosInsertados">Apellidos</div>
             <br>
-            <div class="datosMascota">DNI</div>
+            <div class="datosInsertados">DNI</div>
             <br>
-            <div class="datosMascota">Dirección</div>
+            <div class="datosInsertados">Dirección</div>
             <br>
-            <div class="datosMascota">CP</div>
+            <div class="datosInsertados">CP</div>
             <br>
-            <div class="datosMascota">Teléfono</div>
+            <div class="datosInsertados">Teléfono</div>
         </div>
-
+         <div class="col-1"></div>
     </div>
   
 <div class="row">
