@@ -1,18 +1,3 @@
-#nombreMascota{
-    width: 384px;
-    height: 114px;
-    border: 2px solid black;
-    background: no-repeat;
-    background-image: url("../imagenes/Mascotas/pgMascotasCuadro2.png");
-}﻿
-
-#aSaber{
-    width: 20px;
-    height: 20px;
-    background: no-repeat;
-    background-image: url("../imagenes/Mascotas/pgMascotasFoto.png");   
-}
-
 .datosMascota{
     width: 200px;
     height:40px;
@@ -103,4 +88,19 @@
 #contenido{
     width:200px;
     background-color: #989cc3;
+}
+
+#nombreMascota{
+    width: 384px;
+    height: 114px;
+    border: 2px solid black;
+    background: no-repeat;
+    background-image: url("../imagenes/Mascotas/pgMascotasCuadro2.png");
+}﻿
+
+#aSaber{
+    width: 60px;
+    height: 60px;
+    background: no-repeat;
+    background-image: url("../imagenes/Mascotas/pgMascotasFoto.png");   
 }

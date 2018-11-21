@@ -6,14 +6,14 @@
     </div>
     <div class="col-md-6">
         <button type="submit" class="btn btn-primary" id="boton1" onclick="cargaDueno()">Dueño</button>
-    </div>
-    
+    </div>  
 </div>
+<div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 <div>
     <div class="row">
-        <div class="col-md-1"></div>
-        <div id="pgPrincipal" class="col-10"></div>
-        <div class="col-md-1"></div>
+        
+        <div id="pgPrincipal" class="col-12"></div>
+        
     </div>
     
 </div>

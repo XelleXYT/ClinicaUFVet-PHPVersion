@@ -3,6 +3,7 @@
 
 
 <div class="row">
+      <div class="col-md-1"></div>
          <div class="col-md-4">
             <br>
             <div class="datosMascota nMascota"></div>
@@ -31,8 +32,11 @@
             <br>
             <div class="datosInsertados">Teléfono</div>
         </div>
-         <div class="col-2"></div>
+         <div class="col-1"></div>
     </div>
+<br>
+<div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
+<br>
   
 <div class="row">
     <div class="col-md-6">

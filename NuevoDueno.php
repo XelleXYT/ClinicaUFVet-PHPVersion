@@ -3,6 +3,7 @@
  
 
 <div class="row">
+    <div class="col-1"></div>
         <div class="col-md-4">
             <div class="datosMascota nMascota"></div>
             <br>
@@ -29,9 +30,11 @@
             <br>
             <input id="cajaTLFN" class="form-control" type="text" placeholder="Teléfono">
         </div>
-        <div class="col-md-2"></div>
+    <div class="col-1"></div>
   </div>
-
+<br>
+<div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
+<br>
 <div class="row">
     <div class="col-md-6">
         <button type="submit" class="btn btn-primary" id="boton1" onclick="">Editar</button>
