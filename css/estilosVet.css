@@ -189,6 +189,36 @@
     background-image: url("../imagenes/Mascotas/pgMascotasInsertarH.png");
 }
 
+.botonMascota{
+    width: 169px;
+    height: 45px;
+    background-image: url("../imagenes/Login/pgMascotasMascota.png");
+}
+
+.botonMascota:hover{
+    background-image: url("../imagenes/Login/pgMascotasMascotaP.png");
+}
+
+.botonCliente{
+    width: 169px;
+    height: 45px;
+    background-image: url("../imagenes/Login/pgMascotasCliente.png");
+}
+
+.botonCliente:hover{
+    background-image: url("../imagenes/Login/pgMascotasClienteP.png");
+}
+
+.botonBuscar{
+    width: 169px;
+    height: 45px;
+    background-image: url("../imagenes/Login/pgMascotasBuscar.png");
+}
+
+.botonBuscar:hover{
+    background-image: url("../imagenes/Login/pgMascotasBuscarP.png");
+}
+
 #nombreMascota{
     width: 384px;
     height: 114px;
