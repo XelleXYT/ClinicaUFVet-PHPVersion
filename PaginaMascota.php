@@ -1,15 +1,15 @@
 <?php
 ?>
 
-<br>
-<br>
+
     
   <div class="row">
       <div class="col-1"></div>
-        <div class="col-3">
-            <div id="aSaber">Foto</div>
+        <div class="col-4">
+            <div class="unaFoto"></div>
         </div>
-        <div class="col-7">
+        <div class="col-6">
+            <br>
             <div id="nombreMascota">Aquí va el nombre de la mascota</div>
             <br>
         </div>
@@ -55,10 +55,10 @@
 
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 
-<div id="citas" class="row">
-    
-    Lugar donde se insertan las citas.
-    
+<div class="row">
+    <div class="col-1"></div>
+    <div id="citas" class="col-10">Lugar donde se insertan las citas.  </div>
+    <div class="col-1"></div> 
 </div>
 <br>
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>

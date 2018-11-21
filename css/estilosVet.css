@@ -90,6 +90,13 @@
     background-color: #989cc3;
 }
 
+.unaFoto{
+    width: 157px;
+    height: 166px;
+    background: no-repeat;
+    background-image: url("../imagenes/Mascotas/pgMascotasFoto.png");
+}
+
 #nombreMascota{
     width: 384px;
     height: 114px;
@@ -97,10 +104,3 @@
     background: no-repeat;
     background-image: url("../imagenes/Mascotas/pgMascotasCuadro2.png");
 }﻿
-
-#aSaber{
-    width: 60px;
-    height: 60px;
-    background: no-repeat;
-    background-image: url("../imagenes/Mascotas/pgMascotasFoto.png");   
-}
