@@ -37,10 +37,10 @@
 <br>
 <div class="row">
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="">Editar</button>
+        <button type="submit" class="btn btn-primary botonEditar" id="boton1" onclick="">Editar</button>
     </div>
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="">Insertar</button>
+        <button type="submit" class="btn btn-primary botonGuardar" id="boton1" onclick="">Insertar</button>
     </div>
 </div>
 

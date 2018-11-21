@@ -61,15 +61,24 @@
     <div class="col-1"></div> 
 </div>
 <br>
+<div class="row">
+    <div class="col-md-6">
+        <button type="submit" class="btn btn-primary borrarCita" id="boton1" onclick="">Borrar</button>
+    </div>
+    <div class="col-md-6">
+        <button type="submit" class="btn btn-primary nuevaCita" id="boton1" onclick="">Insertar</button>
+    </div>
+</div>
+<br>
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 <br>
 
 <div class="row">
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="">Buscar Mascota</button>
+        <button type="submit" class="btn btn-primary editarMascota" id="boton1" onclick="">Buscar Mascota</button>
     </div>
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="nuevaMascota()">Nueva Mascota</button>
+        <button type="submit" class="btn btn-primary nuevaMascota" id="boton1" onclick="nuevaMascota()">Nueva Mascota</button>
     </div>
 </div>
 

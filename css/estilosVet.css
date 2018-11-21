@@ -97,6 +97,98 @@
     background-image: url("../imagenes/Mascotas/pgMascotasFoto.png");
 }
 
+.botonLogin{
+    width:176px;
+    height:62px;
+    background: no-repeat;
+    background-image: url("../imagenes/Login/pgLoginBoton.png");
+    
+}
+
+.botonLogin:hover{
+    background-image: url("../imagenes/Login/pgLoginBotonH.png");
+}
+
+.botonGuardar{
+    width:233px;
+    height:61px;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaGuardar.png");
+}
+
+.botonGuardar:hover{
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaGuardarH.png");
+}
+
+.botonEditar{
+    width:235px;
+    height:63px;
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaEditar.png");
+}
+
+.botonEditar:hover{
+    background-image: url("../imagenes/NuevaMascota/pgDatosMascotaEditarH.png");
+}
+
+.editarCliente{
+    width: 235px;
+    height: 63px;
+    background-image: url("../imagenes/Cliente/pgClienteBotonEditarCliente.png");
+}
+
+.editarCliente:hover{
+    background-image: url("../imagenes/Cliente/pgClienteBotonEditarClienteH.png");
+}
+
+.nuevoCliente{
+    width: 235px;
+    height: 63px;
+    background-image: url("../imagenes/Cliente/pgClienteBotonNuevoCliente.png");
+}
+
+.nuevoCliente:hover{
+    background-image: url("../imagenes/Cliente/pgClienteBotonNuevoClienteH.png");
+}
+
+.nuevaMascota{
+    width: 235px;
+    height: 63px;
+    background-image: url("../imagenes/Mascotas/pgMascotasNuevaMascota.png");
+}
+
+.nuevaMascota:hover{
+    background-image: url("../imagenes/Mascotas/pgMascotasNuevaMascotaH.png");
+}
+
+.editarMascota{
+    width: 235px;
+    height: 63px;
+    background-image: url("../imagenes/Mascotas/pgMascotasEditarMascota.png");
+}
+
+.editarMascota:hover{
+    background-image: url("../imagenes/Mascotas/pgMascotasEditarMascotaH.png");
+}
+
+.borrarCita{
+    width: 169px;
+    height: 45px;
+    background-image: url("../imagenes/Mascotas/pgMascotasBorrar.png");
+}
+
+.borrarCita:hover{
+    background-image: url("../imagenes/Mascotas/pgMascotasBorrarH.png");
+}
+
+.nuevaCita{
+    width: 169px;
+    height: 45px;
+    background-image: url("../imagenes/Mascotas/pgMascotasInsertar.png");
+}
+
+.nuevaCita:hover{
+    background-image: url("../imagenes/Mascotas/pgMascotasInsertarH.png");
+}
+
 #nombreMascota{
     width: 384px;
     height: 114px;
@@ -104,3 +196,4 @@
     background: no-repeat;
     background-image: url("../imagenes/Mascotas/pgMascotasCuadro2.png");
 }﻿
+

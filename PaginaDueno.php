@@ -40,10 +40,10 @@
   
 <div class="row">
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="">Buscar Dueño</button>
+        <button type="submit" class="btn btn-primary editarCliente" id="boton1" onclick="nuevoDueno()"></button>
     </div>
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="nuevoDueno()">Nuevo Dueño</button>
+        <button type="submit" class="btn btn-primary nuevoCliente" id="boton1" onclick="nuevoDueno()">Nuevo Dueño</button>
     </div>
 </div>
 

@@ -2,10 +2,10 @@
 ?>
 <div id="menu" class="row">
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="cargaMascota()">Mascota</button>
+        <button type="submit" class="btn btn-primary botones" id="boton1" onclick="cargaMascota()">Mascota</button>
     </div>
     <div class="col-md-6">
-        <button type="submit" class="btn btn-primary" id="boton1" onclick="cargaDueno()">Dueño</button>
+        <button type="submit" class="btn btn-primary botones" id="boton1" onclick="cargaDueno()">Dueño</button>
     </div>  
 </div>
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
