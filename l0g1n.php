@@ -31,19 +31,19 @@ $name_input = limpiaPalabra($name_input);
 $pass_input = limpiaPalabra($pass_input);
 
 //echo 'User: '.$name_input.' Password: '.$pass_input;
-$resultadoQuery = $mysqli->query("SELECT * FROM usuarios WHERE nombreUsuario = '$name_input' AND userPass = '$pass_input'");
+$resultadoQuery = $mysqli->query("SELECT * FROM veterinario WHERE dni = '$name_input' AND pass = '$pass_input'");
 
-$numUsuarios = $resultadoQuery->num_rows;
+$numUsuarios = $resultadoQuery -> num_rows;
 
 if ($numUsuarios > 0) {
 
     $r = $resultadoQuery->fetch_array();
 
     // Guarda el nombre de usuario en la variable de sesión nombreUsuario.
-    $_SESSION['nombreUsuario'] = $name_input; 
+    $_SESSION['nombre'] = $name_input; 
     
     // Guarda el idUsuario de la base de datos en la variable de sesión idUsuario.
-    $_SESSION['idUsuario'] = $r['idUsuario'];
+    $_SESSION['dni'] = $r['dni'];
 
     // Muestra la pantalla de la aplicación
     require 'PaginaPrincipal.php';

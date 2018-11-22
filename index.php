@@ -60,7 +60,7 @@ and open the template in the editor.
 
                                 }
 
-                              /*  $('#botonLogin').click(function () {
+                                $('#botonLogin').click(function () {
                                     // Read the input content
                                     var _name_input = $('#cajanombre').val();
                                     var _pass_input = $('#cajapassword').val();
@@ -70,7 +70,7 @@ and open the template in the editor.
                                         pass_input: _pass_input
                                     });
                                 });
-*/
+
     </script>
 
     }
