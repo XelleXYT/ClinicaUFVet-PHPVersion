@@ -24,15 +24,25 @@ and open the template in the editor.
                 <div class="col-2"></div>
                 <div id="contenido" class="col-8">
                     <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-4">
+                            <br>
+                            <div class="datosMascota loginUser"></div>
+                            <br>
+                            <div class="datosMascota loginPass"></div>
+                        </div>
                         <div class="col-6">
+                            <br>
                             <input id="cajanombre" class="form-control" name="usuario_nombre" type="text" placeholder="Usuario">
                             <br>                                                                                      <!--Podemos llamar a una variable php dentro de un tag html-->
                             <input id="cajapassword" class="form-control" name="contraseña" type="password" placeholder="Contraseña">
                             <br>
-                            <button type="submit" class="btn btn-primary botonLogin" id="botonLogin" onclick="cargaPagina()"></button> 
+                            <button type="submit" class="btn botonLogin" id="botonLogin" style="float:right;" onclick="cargaPagina()"></button>
+                            <br>
                         </div>
-                        <div class="col-6"></div>
+                        <div class="col-1"></div>
                     </div>
+                    <br>
                 </div>
                 <div class="col-2"></div>
             </div>

@@ -2,7 +2,7 @@
 ?>
 
 
-    
+<br>
   <div class="row">
       <div class="col-1"></div>
         <div class="col-4">
@@ -15,7 +15,7 @@
         </div>
         <div class="col-1"></div>
   </div>
-
+<br>
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 
     <div class="row">
@@ -23,29 +23,69 @@
          <div class="col-md-4">
             <br>
             <div class="datosMascota mChip"></div>
-            <br>
-            <div class="datosMascota mSexo"></div>
-            <br>
-            <div class="datosMascota mEspecie"></div>
-            <br>
-            <div class="datosMascota mRaza"></div>
-            <br>
-            <div class="datosMascota fNac"></div>
-            <br>
-            <div class="datosMascota mProp"></div>
         </div>
         <div class="col-md-6">
             <br>
             <div class="datosInsertados">Aquí va el chip</div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+<div class="row">
+        <div class="col-md-1"></div>
+         <div class="col-md-4">
+            <br>
+            <div class="datosMascota mSexo"></div>
+            <br>           
+        </div>
+        <div class="col-md-6">
             <br>
             <div class="datosInsertados">Sexo</div>
             <br>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+<div class="row">
+        <div class="col-md-1"></div>
+         <div class="col-md-4">
+            <div class="datosMascota mEspecie"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <div class="datosInsertados">Especie</div>
             <br>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+<div class="row">
+        <div class="col-md-1"></div>
+         <div class="col-md-4">
+            <div class="datosMascota mRaza"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <div class="datosInsertados">Raza</div>
             <br>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+<div class="row">
+        <div class="col-md-1"></div>
+         <div class="col-md-4">
+            <div class="datosMascota fNac"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <div class="datosInsertados">Fecha Nacimiento</div>
             <br>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+<div class="row">
+        <div class="col-md-1"></div>
+         <div class="col-md-4">
+            <div class="datosMascota mProp"></div>
+        </div>
+        <div class="col-md-6">
             <div class="datosInsertados">Dueño</div>
         </div>
         <div class="col-md-1"></div>
@@ -62,24 +102,30 @@
 </div>
 <br>
 <div class="row">
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary borrarCita" id="boton1" onclick="">Borrar</button>
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <button type="submit" class="btn borrarCita" id="boton1" onclick=""></button>
     </div>
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary nuevaCita" id="boton1" onclick="">Insertar</button>
+    <div class="col-2"></div>
+    <div class="col-md-4">
+        <button type="submit" class="btn nuevaCita" id="boton1" onclick=""></button>
     </div>
+    <div class="col-1"></div>
 </div>
 <br>
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 <br>
 
-<div class="row">
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary editarMascota" id="boton1" onclick="">Buscar Mascota</button>
+<div class="row menu">
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <button type="submit" class="btn editarMascota" id="boton1" onclick=""></button>
     </div>
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary nuevaMascota" id="boton1" onclick="nuevaMascota()">Nueva Mascota</button>
+    <div class="col-2"></div>
+    <div class="col-md-4">
+        <button type="submit" class="btn nuevaMascota" id="boton1" onclick="nuevaMascota()"></button>
     </div>
+    <div class="col-1"></div>
 </div>
 
 

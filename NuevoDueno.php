@@ -1,46 +1,90 @@
 <?php
 ?>
  
-
+<br>
 <div class="row">
     <div class="col-1"></div>
         <div class="col-md-4">
             <div class="datosMascota nMascota"></div>
             <br>
-            <div class="datosMascota pApellidos"></div>
-            <br>
-            <div class="datosMascota pDNI"></div>
-            <br>
-            <div class="datosMascota pDir"></div>
-            <br>
-            <div class="datosMascota pCP"></div>
-            <br>
-            <div class="datosMascota pTLFN"></div>
         </div>
         <div class="col-md-6">
             <input id="cajaNombre" class="form-control" type="text" placeholder="Nombre">
             <br>
+        </div>
+    <div class="col-1"></div>
+  </div>
+<div class="row">
+    <div class="col-1"></div>
+        <div class="col-md-4">
+            <div class="datosMascota pApellidos"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <input id="cajaApellidos" class="form-control" type="text" placeholder="Apellidos">
             <br>
+        </div>
+    <div class="col-1"></div>
+  </div>
+<div class="row">
+    <div class="col-1"></div>
+        <div class="col-md-4">
+            <div class="datosMascota pDNI"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <input id="cajaDNI" class="form-control" type="text" placeholder="DNI">
             <br>
+        </div>
+    <div class="col-1"></div>
+  </div>
+<div class="row">
+    <div class="col-1"></div>
+        <div class="col-md-4">
+            <div class="datosMascota pDir"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <input id="cajaDir" class="form-control" type="text" placeholder="Dirección">
             <br>
+        </div>
+    <div class="col-1"></div>
+  </div>
+<div class="row">
+    <div class="col-1"></div>
+        <div class="col-md-4">
+            <div class="datosMascota pCP"></div>
+            <br>
+        </div>
+        <div class="col-md-6">
             <input id="cajaCP" class="form-control" type="text" placeholder="CP">
             <br>
+        </div>
+    <div class="col-1"></div>
+  </div>
+<div class="row">
+    <div class="col-1"></div>
+        <div class="col-md-4">
+            <div class="datosMascota pTLFN"></div>
+        </div>
+        <div class="col-md-6">
             <input id="cajaTLFN" class="form-control" type="text" placeholder="Teléfono">
         </div>
     <div class="col-1"></div>
   </div>
+
 <br>
 <div class="row" style="height: 20px; width: 1000px; background-color: #2f3145;"></div>
 <br>
-<div class="row">
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary botonEditar" id="boton1" onclick="">Editar</button>
+<div class="row menu">
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <button type="submit" class="btn botonEditar" id="boton1" onclick=""></button>
     </div>
-    <div class="col-md-6">
-        <button type="submit" class="btn btn-primary botonGuardar" id="boton1" onclick="">Insertar</button>
+    <div class="col-2"></div>
+    <div class="col-md-4">
+        <button type="submit" class="btn botonGuardar" id="boton1" onclick=""></button>
     </div>
+    <div class="col-1"></div>
 </div>
 

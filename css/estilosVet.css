@@ -4,6 +4,10 @@
     border: 2px solid black;
 }
 
+.menu{
+    height:100px;
+}
+
 .datosInsertados{
    width: 400px;
    height:40px;
@@ -76,6 +80,16 @@
 .pTLFN{
    background: no-repeat;
    background-image: url("../imagenes/Cliente/pgClienteTelefonoLetras.png"); 
+}
+
+.loginUser{
+   background: no-repeat;
+   background-image: url("../imagenes/Login/pgLoginUsuarioLetras.png"); 
+}
+
+.loginPass{
+   background: no-repeat;
+   background-image: url("../imagenes/Login/pgLoginContraseñaLetras.png");
 }
 
 .banner{
@@ -217,6 +231,10 @@
 
 .botonBuscar:hover{
     background-image: url("../imagenes/Login/pgMascotasBuscarP.png");
+}
+
+.espacioIndex{
+    height:30px;
 }
 
 #nombreMascota{
