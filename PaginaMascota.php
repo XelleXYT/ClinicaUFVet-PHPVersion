@@ -1,4 +1,17 @@
 <?php
+include ('m1sFunc10nes.php');
+    
+    $numeroChip=$_POST['numeroChip'];
+    
+    //$numeroChip=1;
+    
+    $mysql= conectaBBDD();
+    $resultadoQuery=$mysql->query("SELECT * FROM mascota WHERE chip=$numeroChip");
+    $numMascota = $resultadoQuery->num_rows;
+    
+    echo $numMascota;
+
+
 ?>
 
 

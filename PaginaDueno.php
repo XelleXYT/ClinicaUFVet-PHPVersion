@@ -1,4 +1,17 @@
 <?php
+
+   include ('m1sFunc10nes.php');
+ 
+ $numeroDNI=$_POST['numeroDNI'];
+ 
+ //$numeroDNI='00000001C';
+ 
+ $mysql= conectaBBDD();
+ $resultadoQuery=$mysql->query("SELECT * FROM cliente WHERE dni='$numeroDNI'");
+ $numCliente = $resultadoQuery->num_rows;
+ 
+ echo $numCliente;
+
 ?>
 
 
