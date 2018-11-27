@@ -11,6 +11,18 @@
  $numCliente = $resultadoQuery->num_rows;
  
  echo $numCliente;
+ 
+     $listaCliente = array();
+
+for ($i = 0; $i < $listaCliente; $i++) {
+    $rAux = $resultadoQuery->fetch_array();
+    $listaCliente[$i][0] = $rAux['dni'];
+    $listaCliente[$i][1] = $rAux['nombre'];
+    $listaCliente[$i][2] = $rAux['apellido'];
+    $listaCliente[$i][3] = $rAux['direccion'];
+    $listaCliente[$i][4] = $rAux['cp'];
+    $listaCliente[$i][5] = $rAux['telefono'];
+}
 
 ?>
 

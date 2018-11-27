@@ -10,7 +10,20 @@ include ('m1sFunc10nes.php');
     $numMascota = $resultadoQuery->num_rows;
     
     echo $numMascota;
+  
+    
+    $listaMascota = array();
 
+for ($i = 0; $i < $listaMascota; $i++) {
+    $rAux = $resultadoQuery->fetch_array();
+    $listaMascota[$i][0] = $rAux['chip'];
+    $listaMascota[$i][1] = $rAux['nombre'];
+    $listaMascota[$i][2] = $rAux['sexo'];
+    $listaMascota[$i][3] = $rAux['especie'];
+    $listaMascota[$i][4] = $rAux['raza'];
+    $listaMascota[$i][5] = $rAux['fecha_nacimiento'];
+    $listaMascota[$i][6] = $rAux['cliente'];
+}
 
 ?>
 
