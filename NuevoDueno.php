@@ -1,4 +1,7 @@
 <?php
+
+    $datos=$_POST['datosCliente']; 
+
 ?>
  
 <br>
@@ -87,4 +90,11 @@
     </div>
     <div class="col-1"></div>
 </div>
+
+<script>
+    var datos=<?php echo json_encode($datos)?>
+    
+    console.log(datos);
+
+</script>
 

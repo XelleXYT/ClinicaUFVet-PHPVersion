@@ -112,7 +112,7 @@ for ($i = 0; $i < $numCliente; $i++) {
 <div class="row menu">
     <div class="col-1"></div>
     <div class="col-md-4">
-        <button type="submit" class="btn editarCliente" id="boton1" onclick="nuevoDueno()"></button>
+        <button type="submit" class="btn editarCliente" id="boton1" onclick="editarCliente()"></button>
     </div>
     <div class="col-2"></div>
     <div class="col-md-4">
@@ -125,9 +125,11 @@ for ($i = 0; $i < $numCliente; $i++) {
     
     var listaCliente=<?php echo json_encode($listaCliente)?>
     
-    if(listaCliente.size>0){
+    console.log(listaCliente);
+    
+    
       rellenaDatosC();
-    }
+    
     
   function nuevoDueno(){
           $("#pgPrincipal").load("NuevoDueno.php");
@@ -141,6 +143,14 @@ for ($i = 0; $i < $numCliente; $i++) {
     $('#cCP').text(listaCliente[4]);
     $('#cTelefono').text(listaCliente[5]);
       
+  }
+  
+  function editarCliente(){
+      var arrayCliente=listaCliente;
+      
+      $("#pgPrincipal").load("NuevoDueno.php", {
+         datosCliente: arrayCliente, 
+      });
   }
 
 </script>
