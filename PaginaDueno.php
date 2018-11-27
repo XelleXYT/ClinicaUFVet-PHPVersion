@@ -16,13 +16,17 @@
 
 for ($i = 0; $i < $numCliente; $i++) {
     $rAux = $resultadoQuery->fetch_array();
-    $listaCliente[$i][0] = $rAux['dni'];
-    $listaCliente[$i][1] = $rAux['nombre'];
-    $listaCliente[$i][2] = $rAux['apellido'];
-    $listaCliente[$i][3] = $rAux['direccion'];
-    $listaCliente[$i][4] = $rAux['cp'];
-    $listaCliente[$i][5] = $rAux['telefono'];
+    $listaCliente[0] = $rAux['dni'];
+    $listaCliente[1] = $rAux['nombre'];
+    $listaCliente[2] = $rAux['apellido'];
+    $listaCliente[3] = $rAux['direccion'];
+    $listaCliente[4] = $rAux['cp'];
+    $listaCliente[5] = $rAux['telefono'];
+    
+    print_r($listaCliente);
 }
+
+
 
 ?>
 
@@ -36,7 +40,7 @@ for ($i = 0; $i < $numCliente; $i++) {
         </div>
         <div class="col-md-6">
             <br>
-            <div class="datosInsertados">Nombre</div>
+            <div class="datosInsertados"><p id="cNombre" style="text-align:center;"></p></div>
             <br>
         </div>
        <div class="col-1"></div>
@@ -48,7 +52,7 @@ for ($i = 0; $i < $numCliente; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Apellidos</div>
+            <div class="datosInsertados"><p id="cApellido" style="text-align:center;"></p></div>
             <br>
         </div>
        <div class="col-1"></div>
@@ -60,7 +64,7 @@ for ($i = 0; $i < $numCliente; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">DNI</div>
+            <div class="datosInsertados"><p id="cDNI" style="text-align:center;"></p></div>
             <br>
         </div>
        <div class="col-1"></div>
@@ -72,7 +76,7 @@ for ($i = 0; $i < $numCliente; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Dirección</div>
+            <div class="datosInsertados"><p id="cDireccion" style="text-align:center;"></p></div>
             <br>
         </div>
        <div class="col-1"></div>
@@ -84,7 +88,7 @@ for ($i = 0; $i < $numCliente; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">CP</div>
+            <div class="datosInsertados"><p id="cCP" style="text-align:center;"></p></div>
             <br>
         </div>
        <div class="col-1"></div>
@@ -95,7 +99,7 @@ for ($i = 0; $i < $numCliente; $i++) {
             <div class="datosMascota pTLFN"></div>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Teléfono</div>
+            <div class="datosInsertados"><p id="cTelefono" style="text-align:center;"></p></div>
         </div>
        <div class="col-1"></div>
 </div>
@@ -118,8 +122,25 @@ for ($i = 0; $i < $numCliente; $i++) {
 </div>
 
 <script>
+    
+    var listaCliente=<?php echo json_encode($listaCliente)?>
+    
+    if(listaCliente.size>0){
+      rellenaDatosC();
+    }
+    
   function nuevoDueno(){
           $("#pgPrincipal").load("NuevoDueno.php");
       }
+      
+  function rellenaDatosC(){
+    $('#cNombre').text(listaCliente[1]);
+    $('#cApellido').text(listaCliente[2]);
+    $('#cDNI').text(listaCliente[0]);
+    $('#cDireccion').text(listaCliente[3]);
+    $('#cCP').text(listaCliente[4]);
+    $('#cTelefono').text(listaCliente[5]);
+      
+  }
 
 </script>

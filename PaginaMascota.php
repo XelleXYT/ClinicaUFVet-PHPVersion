@@ -16,14 +16,16 @@ include ('m1sFunc10nes.php');
 
 for ($i = 0; $i < $numMascota; $i++) {
     $rAux = $resultadoQuery->fetch_array();
-    $listaMascota[$i][0] = $rAux['chip'];
-    $listaMascota[$i][1] = $rAux['nombre'];
-    $listaMascota[$i][2] = $rAux['sexo'];
-    $listaMascota[$i][3] = $rAux['especie'];
-    $listaMascota[$i][4] = $rAux['raza'];
-    $listaMascota[$i][5] = $rAux['fecha_nacimiento'];
-    $listaMascota[$i][6] = $rAux['cliente'];
+    $listaMascota[0] = $rAux['chip'];
+    $listaMascota[1] = $rAux['nombre'];
+    $listaMascota[2] = $rAux['sexo'];
+    $listaMascota[3] = $rAux['especie'];
+    $listaMascota[4] = $rAux['raza'];
+    $listaMascota[5] = $rAux['fecha_nacimiento'];
+    $listaMascota[6] = $rAux['cliente'];
 }
+   
+    print_r($listaMascota);
 
 ?>
 
@@ -36,7 +38,7 @@ for ($i = 0; $i < $numMascota; $i++) {
         </div>
         <div class="col-6">
             <br>
-            <div id="nombreMascota">Aquí va el nombre de la mascota</div>
+            <div id="nombreMascota"><br><br><p id="mNombre" style="text-align:center;"></p></div>
             <br>
         </div>
         <div class="col-1"></div>
@@ -52,7 +54,7 @@ for ($i = 0; $i < $numMascota; $i++) {
         </div>
         <div class="col-md-6">
             <br>
-            <div class="datosInsertados">Aquí va el chip</div>
+            <div class="datosInsertados"><p id="chip" style="text-align:center;"></p></div>
         </div>
         <div class="col-md-1"></div>
     </div>
@@ -65,7 +67,7 @@ for ($i = 0; $i < $numMascota; $i++) {
         </div>
         <div class="col-md-6">
             <br>
-            <div class="datosInsertados">Sexo</div>
+            <div class="datosInsertados"><p id="sexo" style="text-align:center;"></p></div>
             <br>
         </div>
         <div class="col-md-1"></div>
@@ -77,7 +79,7 @@ for ($i = 0; $i < $numMascota; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Especie</div>
+            <div class="datosInsertados"><p id="especie" style="text-align:center;"></p></div>
             <br>
         </div>
         <div class="col-md-1"></div>
@@ -89,7 +91,7 @@ for ($i = 0; $i < $numMascota; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Raza</div>
+            <div class="datosInsertados"><p id="raza" style="text-align:center;"></p></div>
             <br>
         </div>
         <div class="col-md-1"></div>
@@ -101,7 +103,7 @@ for ($i = 0; $i < $numMascota; $i++) {
             <br>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Fecha Nacimiento</div>
+            <div class="datosInsertados"><p id="nacimiento" style="text-align:center;"></p></div>
             <br>
         </div>
         <div class="col-md-1"></div>
@@ -112,7 +114,7 @@ for ($i = 0; $i < $numMascota; $i++) {
             <div class="datosMascota mProp"></div>
         </div>
         <div class="col-md-6">
-            <div class="datosInsertados">Dueño</div>
+            <div class="datosInsertados"><p id="propietario" style="text-align:center;"></p></div>
         </div>
         <div class="col-md-1"></div>
     </div>
@@ -156,9 +158,27 @@ for ($i = 0; $i < $numMascota; $i++) {
 
 
     <script>
+        
+        var listaMascotas=<?php echo json_encode($listaMascota)?>
+        
+        console.log(listaMascotas[1]);
+        
+        if(listaMascotas.length>0){
+           rellenaDatosM(); 
+        }
     
       function nuevaMascota(){
           $("#pgPrincipal").load("NuevaMascota.php");
+      }
+      
+      function rellenaDatosM(){
+        $('#chip').text(listaMascotas[0]);
+        $('#mNombre').text(listaMascotas[1]);
+        $('#sexo').text(listaMascotas[2]);
+        $('#especie').text(listaMascotas[3]);
+        $('#raza').text(listaMascotas[4]);
+        $('#nacimiento').text(listaMascotas[5]);
+        $('#propietario').text(listaMascotas[6]);
       }
     
     </script>
