@@ -14,7 +14,7 @@ include ('m1sFunc10nes.php');
     
     $listaMascota = array();
 
-for ($i = 0; $i < $listaMascota; $i++) {
+for ($i = 0; $i < $numMascota; $i++) {
     $rAux = $resultadoQuery->fetch_array();
     $listaMascota[$i][0] = $rAux['chip'];
     $listaMascota[$i][1] = $rAux['nombre'];

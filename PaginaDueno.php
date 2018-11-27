@@ -14,7 +14,7 @@
  
      $listaCliente = array();
 
-for ($i = 0; $i < $listaCliente; $i++) {
+for ($i = 0; $i < $numCliente; $i++) {
     $rAux = $resultadoQuery->fetch_array();
     $listaCliente[$i][0] = $rAux['dni'];
     $listaCliente[$i][1] = $rAux['nombre'];
