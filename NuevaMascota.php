@@ -93,7 +93,7 @@ $datos = $_POST['datosMascota'];
 <div class="row menu">
     <div class="col-1"></div>
     <div class="col-md-4">
-        <button type="submit" class="btn botonEditar" id="boton1" onclick=""></button>
+        <button type="submit" class="btn botonEditar" id="botonEditaM" onclick=""></button>
     </div>
     <div class="col-2"></div>
     <div class="col-md-4">
@@ -118,5 +118,29 @@ $datos = $_POST['datosMascota'];
     }
 
     console.log(datos);
+    //Estos datos los vamos a pasar para editar los datos a través de un query.
+    $('#botonEditaM').click(function () {
+        //Vamos a leer el contenido de la caja y guardarlo en una variable.
+        var nombreM = $('#cajaNombreM').val();
+        var chipM= $('#cajaChip').val();
+        var sexoM= $('#cajaSexo').val();
+        var especieM= $('#cajaEspecie').val();
+        var razaM= $('#cajaRaza').val();
+        var nacimientoM= $('#cajaFNacimiento').val();
+        var clienteM= $('#cajaDueno').val();
+
+
+        //Cargamos el archivo que vamos a leer para hacer la comprobación.
+        $('#pgPrincipal').load("editaDatosMascota.php", {
+            nombreM: nombreM,
+            chipM: chipM,
+            sexoM: sexoM,
+            especieM: especieM,
+            razaM: razaM,
+            nacimientoM: nacimientoM,
+            clienteM: clienteM,
+        });
+
+    });
 
 </script>
