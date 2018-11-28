@@ -1,5 +1,4 @@
-<?php
-?>
+<?php ?>
 <div id="menu" class="row">
     <div class="col-md-3">
         <br>
@@ -53,38 +52,40 @@
 
 <script>
 
-   function cargaMascota(){
-       $("#pgPrincipal").load("PaginaMascota.php");
-   }
-   
-   function cargaDueno(){
-       $("#pgPrincipal").load("PaginaDueno.php");
-   }
-   
-   function muestraModal() {
+    function cargaMascota() {
+        $("#pgPrincipal").load("PaginaMascota.php");
+    }
+
+    function cargaDueno() {
+        $("#pgPrincipal").load("PaginaDueno.php");
+    }
+
+    function muestraModal() {
         $('#myModal').modal('show');
-    };
+    }
+    ;
     //Funciones de búsqueda en botones dentro del modal
-    $('#botonChip').click(function (){
+    $('#botonChip').click(function () {
         //Leemos el contenido de la caja y lo guardamos en una variable
         var _cajaChip = $('#cajaDato').val();
         //Cargamos el archivo que vamos a leer para hacer la búsqueda
-        
-        $("#pgPrincipal").load("PaginaMascota.php",{
-             numeroChip: _cajaChip, 
-        });   
+
+        $("#pgPrincipal").load("PaginaMascota.php", {
+            numeroChip: _cajaChip,
+
+        });
     });
-    
-     $('#botonDNI').click(function (){
+
+    $('#botonDNI').click(function () {
         //Leemos el contenido de la caja y lo guardamos en una variable
         var _cajaDNI = $('#cajaDato').val();
         //Cargamos el archivo que vamos a leer para hacer la búsqueda
-        
-        $("#pgPrincipal").load("PaginaDueno.php",{
-             numeroDNI: _cajaDNI, 
-        });   
+
+        $("#pgPrincipal").load("PaginaDueno.php", {
+            numeroDNI: _cajaDNI,
+        });
     });
-    
-    
+
+
 
 </script>
