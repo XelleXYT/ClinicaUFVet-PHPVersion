@@ -97,15 +97,19 @@ $datos = $_POST['datosMascota'];
     </div>
     <div class="col-2"></div>
     <div class="col-md-4">
-        <button type="submit" class="btn botonGuardar" id="boton1" onclick=""></button>
+        <button type="submit" class="btn botonGuardar" id="botonInsertarM" onclick=""></button>
     </div>
     <div class="col-1"></div>
 </div>
 
 <script>
-    var datos =<?php echo json_encode($datos) ?>
-
-    rellenaDatosNM();
+    var datos= new Array();
+    
+    if(editaMascotaBoolean==true){
+       datos=<?php echo json_encode($datos) ?>;
+       rellenaDatosNM(); 
+    }
+   
 
     function rellenaDatosNM() {
         cajaNombreM.value = datos[1];
@@ -132,6 +136,30 @@ $datos = $_POST['datosMascota'];
 
         //Cargamos el archivo que vamos a leer para hacer la comprobación.
         $('#pgPrincipal').load("editaDatosMascota.php", {
+            nombreM: nombreM,
+            chipM: chipM,
+            sexoM: sexoM,
+            especieM: especieM,
+            razaM: razaM,
+            nacimientoM: nacimientoM,
+            clienteM: clienteM,
+        });
+
+    });
+    
+    $('#botonInsertarM').click(function () {
+        //Vamos a leer el contenido de la caja y guardarlo en una variable.
+        var nombreM = $('#cajaNombreM').val();
+        var chipM= $('#cajaChip').val();
+        var sexoM= $('#cajaSexo').val();
+        var especieM= $('#cajaEspecie').val();
+        var razaM= $('#cajaRaza').val();
+        var nacimientoM= $('#cajaFNacimiento').val();
+        var clienteM= $('#cajaDueno').val();
+
+
+        //Cargamos el archivo que vamos a leer para hacer la comprobación.
+        $('#pgPrincipal').load("insertaDatosMascota.php", {
             nombreM: nombreM,
             chipM: chipM,
             sexoM: sexoM,

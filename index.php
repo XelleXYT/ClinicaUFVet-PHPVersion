@@ -54,6 +54,8 @@ and open the template in the editor.
     <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script>
+        
+        var editaMascotaBoolean;
 
                                 function cargaPagina() {
                                     $('#contenido').load("PaginaPrincipal.php");

@@ -167,7 +167,9 @@ print_r($listaMascota);
     }
 
     function nuevaMascota() {
+        editaMascotaBoolean=false;
         $("#pgPrincipal").load("NuevaMascota.php");
+        
     }
 
     function rellenaDatosM() {
@@ -186,6 +188,8 @@ print_r($listaMascota);
         $("#pgPrincipal").load("NuevaMascota.php", {
             datosMascota: arrayMascota,
         });
+        
+        editaMascotaBoolean=true;
     }
 
 </script>
