@@ -80,7 +80,7 @@ $datos = $_POST['datosCliente'];
 <div class="row menu">
     <div class="col-1"></div>
     <div class="col-md-4">
-        <button type="submit" class="btn botonEditar" id="boton1" onclick=""></button>
+        <button type="submit" class="btn botonEditar" id="botonEditaC" onclick=""></button>
     </div>
     <div class="col-2"></div>
     <div class="col-md-4">
@@ -104,6 +104,28 @@ $datos = $_POST['datosCliente'];
     }
 
     console.log(datos);
+
+    $('#botonEditaC').click(function () {
+        var nombreC = $('#cajaNombre').val();
+        var apellidosC = $('#cajaApellidos').val();
+        var dniC = $('#cajaDNI').val();
+        var direccionC = $('#cajaDir').val();
+        var cpC = $('#cajaCP').val();
+        var telefonoC = $('#cajaTLFN').val();
+
+        //Cargamos el archivo que vamos a leer para hacer la comprobación.
+        $('#pgPrincipal').load("editaDatosCliente.php", {
+            nombreC: nombreC,
+            apellidosC: apellidosC,
+            dniC: dniC,
+            direccionC: direccionC,
+            cpC: cpC,
+            telefonoC: telefonoC,
+        });
+
+    });
+
+
 
 </script>
 
