@@ -128,6 +128,7 @@ for ($i = 0; $i < $numCliente; $i++) {
 
 
     function nuevoDueno() {
+        editaClienteBoolean = false;
         $("#pgPrincipal").load("NuevoDueno.php");
     }
 
@@ -147,6 +148,8 @@ for ($i = 0; $i < $numCliente; $i++) {
         $("#pgPrincipal").load("NuevoDueno.php", {
             datosCliente: arrayCliente,
         });
+
+        editaClienteBoolean = true;
     }
 
 
