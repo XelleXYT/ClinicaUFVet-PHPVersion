@@ -9,9 +9,6 @@ $mysql = conectaBBDD();
 $resultadoQuery = $mysql->query("SELECT * FROM mascota WHERE chip=$numeroChip");
 $numMascota = $resultadoQuery->num_rows;
 
-echo $numMascota;
-
-
 $listaMascota = array();
 
 for ($i = 0; $i < $numMascota; $i++) {
@@ -25,9 +22,21 @@ for ($i = 0; $i < $numMascota; $i++) {
     $listaMascota[6] = $rAux['cliente'];
 }
 
-print_r($listaMascota);
-?>
+// 
+$resultadoQuery = $mysql->query("SELECT * FROM cita WHERE mascota = $numeroChip");
+$numCitas = $resultadoQuery->num_rows;
 
+$listaCitas = array();
+
+for ($i = 0; $i < $numCitas; $i++) {
+    $rAux = $resultadoQuery->fetch_array();
+    $listaCitas[$i][0] = $rAux[0];
+    $listaCitas[$i][1] = $rAux[1];
+    $listaCitas[$i][2] = $rAux[2];
+    $listaCitas[$i][3] = $rAux[3];
+    $listaCitas[$i][4] = $rAux[4];
+}
+?>
 
 <br>
 <div class="row">
@@ -124,7 +133,16 @@ print_r($listaMascota);
 
 <div class="row">
     <div class="col-1"></div>
-    <div id="citas" class="col-10">Lugar donde se insertan las citas.  </div>
+    <div id="citas" class="col-10" style="height: 400px">
+        <div>Numero Cita: <span id="c_id"></span></div>
+        <div>Fecha cita: <span id="c_fecha"></span></div>
+        <div>Veterinario: <span id="c_veterinario"></span></div>
+        <div>Descripción: <br/><span id="c_descripcion"></span></div>
+        <div style="float: none; position: relative; top: 200px;">
+        <div class="btn datosInsertados" onclick="anteriorCita()">Anterior</div>
+        <div class="btn datosInsertados" onclick="siguienteCita()">Siguiente</div>
+        </div>
+    </div>
     <div class="col-1"></div> 
 </div>
 <br>
@@ -158,18 +176,42 @@ print_r($listaMascota);
 
 <script>
 
-    var listaMascotas =<?php echo json_encode($listaMascota) ?>
-
+    var listaMascotas =<?php echo json_encode($listaMascota) ?>;
+    var listaCitas =<?php echo json_encode($listaCitas) ?>;
+    var numcita = 0;
     console.log(listaMascotas[1]);
+    console.log(listaCitas[1]);
 
     if (listaMascotas.length > 0) {
         rellenaDatosM();
     }
 
+    if (listaCitas.length > 0) {
+        rellenaDatosC();
+    }
+
     function nuevaMascota() {
-        editaMascotaBoolean=false;
+        editaMascotaBoolean = false;
         $("#pgPrincipal").load("NuevaMascota.php");
-        
+
+    }
+
+    function siguienteCita() {
+        if (numcita + 1 <= listaCitas.length - 1) {
+            numcita++;
+        } else {
+            numcita = 0;
+        }
+        rellenaDatosC();
+    }
+    
+    function anteriorCita() {
+        if (numcita - 1 >= 0) {
+            numcita--;
+        } else {
+            numcita = listaCitas.length - 1;
+        }
+        rellenaDatosC();
     }
 
     function rellenaDatosM() {
@@ -182,14 +224,21 @@ print_r($listaMascota);
         $('#propietario').text(listaMascotas[6]);
     }
 
+    function rellenaDatosC() {
+        $('#c_id').text(listaCitas[numcita][0]);
+        $('#c_fecha').text(listaCitas[numcita][1]);
+        $('#c_veterinario').text(listaCitas[numcita][4]);
+        $('#c_descripcion').text(listaCitas[numcita][2]);
+    }
+
     function editarMascota() {
         var arrayMascota = listaMascotas;
 
         $("#pgPrincipal").load("NuevaMascota.php", {
             datosMascota: arrayMascota,
         });
-        
-        editaMascotaBoolean=true;
+
+        editaMascotaBoolean = true;
     }
 
 </script>
